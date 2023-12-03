@@ -1,0 +1,133 @@
+.filter-container{
+    display: flex;
+    width: 25%;
+}
+.container {
+    position: fixed;
+    top:6vh;
+    bottom: 0;
+    color: pink;
+    background-color: black;
+    width: 25vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3vh;
+}
+.search{
+    height: 10vh;
+}
+.input-search{
+    height: 4vh;
+    width: 20vw;
+}
+.select-location-title{
+    color: aliceblue;
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 1vh;
+    font-size: 1.5rem;
+    background-color: black;
+}
+.location-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1vw 0 1vw;
+}
+.location{
+    color: black;
+    margin-top: 20px;
+    background-color: white;
+    font-size: 30px;
+    /* border-radius: 20px; */
+    width: 19vw;
+}
+
+.location-list{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.select{
+    height: 40px;
+    width: 17vw;
+    border-radius: 20px;
+}
+.category {
+    margin-top: 5vh;
+    font-family: sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    /* height: 100vh; */
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .title {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-right: 3vw;
+  }
+  .check-box{
+    margin-right: 15px;
+  }
+  .list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+    align-items: flex-start;
+  }
+  .checked-item,
+  .not-checked-item {
+    margin-left: 10px;
+  }
+  .checked-item {
+    text-decoration: line-through;
+  }
+  .reset{
+    margin-top: 30px;
+    font-size: 25px;
+  }
+  .reset-button{
+    border-radius: 10px;
+    padding: 3px 20px;
+    font-size: 25px;
+  }
+.filterButton{
+  display: none;
+}
+  /* @media (max-width:1000px){
+    .open-container{
+        display: none;
+    }
+    .opener{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        margin-left: 25%;
+        width: 5%;
+        height: 100%;
+        background-color: black;
+    }
+  } */
+
+  @media screen and (max-width:900px){
+    .container{
+      display: none;
+    }
+  .filterButton{
+    z-index: 2;
+    display:block;
+    position: absolute;
+    left:0;
+    width:2rem;
+    height:100%;
+    /* transition: left 0.5s ease-in-out; */
+  }
+  }

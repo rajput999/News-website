@@ -1,0 +1,93 @@
+.emailOverlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    backdrop-filter: blur(8px);
+    justify-content: center;
+    align-items: center;
+}
+.emailOverlay form{
+    width: 90%;
+}
+.emailOverlay form svg{
+    width: 1.5rem;
+    fill: whitesmoke;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+.emailOverlay form input{
+    border-radius: 1rem;
+    width: 50%;
+    font-size: 1.3rem;
+    height: 2.5rem;
+    font-weight: 600;
+    padding: 0 1rem;
+    border: none;
+}
+.emailOverlay form input:focus{
+    outline: none;
+}
+.emailOverlay form button{
+    width: 30%;
+    border: none;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    background-color: antiquewhite;
+    height: 2.5rem;
+}
+.suscriptionContent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    gap: 2rem;
+    align-items: center;
+    border-radius: 1rem;
+    width: 30%;
+    height: 20rem;
+    background-color: black;
+    z-index: 2;
+}
+.suscriptionContent svg{
+    width: 2rem;
+}
+
+@media (max-width:1200px){
+    .suscriptionContent{
+        width: 45vw;
+    }
+}
+
+@media (max-width:1000px){
+    .suscriptionContent{
+        width: 60vw;
+    }
+}
+@media (max-width:800px){
+    .suscriptionContent{
+        width: 70vw;
+    }
+    .emailOverlay form input{
+        width: 70%;
+    }
+    .emailOverlay form button{
+        width: 30%;
+    }
+}
+@media (max-width:600px){
+    .suscriptionContent{
+        width: 80vw;
+    }
+    .emailOverlay form input{
+        width: 80%;
+    }
+    .emailOverlay form button{
+        width: 40%;
+    }
+}
