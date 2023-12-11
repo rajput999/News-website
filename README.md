@@ -8,7 +8,7 @@ A MERN stack website that allows users to read and post news articles.
 2. Navigate to the cloned directory using `cd News-website`.
 
 ## For Frontend
-1. Navigate to the Backend using `cd Frontend`.
+1. Navigate to the Frontend using `cd Frontend`.
 2. Install the dependencies using `npm install`.
 3. Start the server using `npm start`.
 
